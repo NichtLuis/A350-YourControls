@@ -1,4 +1,4 @@
 # A350-Yourcontrols
 
-- YourControls Config for the iniBuilds A350 
-- WIP
+- Experimental Version
+- Could have more features but could also be broken
