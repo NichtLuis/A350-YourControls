@@ -1,0 +1,163 @@
+include:
+  - definitions/modules/physics.yaml
+  - definitions/modules/radios.yaml
+  - definitions/modules/service.yaml
+  - definitions/modules/slew.yaml
+
+shared:
+  -
+    type: ProgramActionEvent
+    event_name: AUTOPILOT_OFF
+    action: TakeControls
+
+
+-
+  type: var
+  var_name: L:INI_LOUDSPEAKER_1
+-
+  type: var
+  var_name: L:INI_ATC_MSG
+-
+  type: var
+  var_name: L:INI_CPT_CHRONO_BUTTON
+-
+  type: var
+  var_name: L:INI_MASTER_WARNING_COMMAND
+-
+  type: var
+  var_name: L:INI_MASTER_CAUTION_COMMAND
+-
+  type: var
+  var_name: L:INI_1_ALTIMETER_PUSH_COMMAND
+-
+  type: var
+  var_name: L:INI_1_ALTIMETER_PULL_COMMAND
+-
+  type: var
+  var_name: L:INI_LS_CAPTAIN
+-
+  type: var
+  var_name: L:INI_VV_LEFT
+-
+  type: var
+  var_name: L:INI_EFIS_CPT_CSTR_BUTTON
+-
+  type: var
+  var_name: L:INI_EFIS_CPT_FIXES_BUTTON
+-
+  type: var
+  var_name: L:INI_EFIS_CPT_VOR_BUTTON
+-
+  type: var
+  var_name: L:INI_EFIS_CPT_NDB_BUTTON
+-
+  type: var
+  var_name: L:INI_EFIS_CPT_ARPT_BUTTON
+-
+  type: var
+  var_name: L:INI_EFIS_BSK_1_CPT
+-
+  type: var
+  var_name: L:INI_EFIS_BSK_2_CPT
+-
+  type: var
+  var_name: L:INI_EFIS_BSK_3_CPT
+-
+  type: var
+  var_name: L:INI_EFIS_BSK_4_CPT
+-
+  type: var
+  var_name: L:INI_EFIS_BSK_5_CPT
+-
+  type: var
+  var_name: L:INI_MAP_MODE_CAPT_SWITCH
+-
+  type: var
+  var_name: L:INI_MAP_MODE_RANGE_CAPT_SWITCH
+-
+  type: var
+  var_name: L:INI_SPD_MACH_BUTTON
+-
+  type: var
+  var_name: L:INI_AIRSPEED_DIAL_UP_COMMAND
+-
+  type: var
+  var_name: L:INI_AIRSPEED_DIAL_DN_COMMAND
+-
+  type: var
+  var_name: L:INI_FCU_MANAGED_SPEED_BUTTON
+-
+  type: var
+  var_name: L:INI_FCU_SELECTED_SPEED_BUTTON
+-
+  type: var
+  var_name: L:INI_AIRSPEED_DIAL
+-
+  type: var
+  var_name: L:INI_NORTH_REF_STATE
+-
+  type: var
+  var_name: L:INI_HEADING_DIAL_UP_COMMAND
+-
+  type: var
+  var_name: L:INI_HEADING_DIAL_DN_COMMAND
+-
+  type: var
+  var_name: L:INI_FCU_MANAGED_HEADING_BUTTON
+-
+  type: var
+  var_name: L:INI_FCU_SELECTED_HEADING_BUTTON
+-
+  type: var
+  var_name: L:INI_HEADING_DIAL
+-
+  type: var
+  var_name: L:INI_FCU_HDG_VS_COMMAND
+-
+  type: var
+  var_name: L:INI_FD_ON
+-
+  type: var
+  var_name: L:INI_AP1_BUTTON
+-
+  type: var
+  var_name: L:INI_AP2_BUTTON
+-
+  type: var
+  var_name: L:INI_FCU_METRIC_STATE
+-
+  type: var
+  var_name: L:INI_FCU_ALTITUDE_MODE_COMMAND
+-
+  type: var
+  var_name: L:INI_ALTITUDE_DIAL_UP_COMMAND
+-
+  type: var
+  var_name: L:INI_ALTITUDE_DIAL_DN_COMMAND
+-
+  type: var
+  var_name: L:INI_FCU_ALTITUDE_PUSH_COMMAND
+-
+  type: var
+  var_name: L:INI_FCU_ALTITUDE_PULL_COMMAND
+-
+  type: var
+  var_name: L:INI_ALTITUDE_DIAL
+-
+  type: var
+  var_name: L:INI_FCU_LEVEL_OFF_COMMAND
+-
+  type: var
+  var_name: L:INI_VVI_DIAL_UP_COMMAND
+-
+  type: var
+  var_name: L:INI_VVI_DIAL_DN_COMMAND
+-
+  type: var
+  var_name: L:INI_FCU_PUSH_COMMAND
+-
+  type: var
+  var_name: L:INI_FCU_PULL_COMMAND
+-
+  type: var
+  var_name: L:INI_VVI_DIAL
