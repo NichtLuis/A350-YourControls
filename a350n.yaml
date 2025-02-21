@@ -5,159 +5,666 @@ include:
   - definitions/modules/slew.yaml
 
 shared:
-  -
-    type: ProgramActionEvent
-    event_name: AUTOPILOT_OFF
-    action: TakeControls
-
-
 -
+  type: ProgramActionEvent
+  event_name: AUTOPILOT_OFF
+  action: TakeControls
+- 
   type: var
   var_name: L:INI_LOUDSPEAKER_1
--
+- 
   type: var
   var_name: L:INI_ATC_MSG
--
+- 
   type: var
   var_name: L:INI_CPT_CHRONO_BUTTON
--
+- 
   type: var
   var_name: L:INI_MASTER_WARNING_COMMAND
--
+- 
   type: var
   var_name: L:INI_MASTER_CAUTION_COMMAND
--
+- 
   type: var
   var_name: L:INI_1_ALTIMETER_PUSH_COMMAND
--
+- 
   type: var
   var_name: L:INI_1_ALTIMETER_PULL_COMMAND
--
+- 
   type: var
   var_name: L:INI_LS_CAPTAIN
--
+- 
   type: var
   var_name: L:INI_VV_LEFT
--
+- 
   type: var
   var_name: L:INI_EFIS_CPT_CSTR_BUTTON
--
+- 
   type: var
   var_name: L:INI_EFIS_CPT_FIXES_BUTTON
--
+- 
   type: var
   var_name: L:INI_EFIS_CPT_VOR_BUTTON
--
+- 
   type: var
   var_name: L:INI_EFIS_CPT_NDB_BUTTON
--
+- 
   type: var
   var_name: L:INI_EFIS_CPT_ARPT_BUTTON
--
+- 
   type: var
   var_name: L:INI_EFIS_BSK_1_CPT
--
+- 
   type: var
   var_name: L:INI_EFIS_BSK_2_CPT
--
+- 
   type: var
   var_name: L:INI_EFIS_BSK_3_CPT
--
+- 
   type: var
   var_name: L:INI_EFIS_BSK_4_CPT
--
+- 
   type: var
   var_name: L:INI_EFIS_BSK_5_CPT
--
+- 
   type: var
   var_name: L:INI_MAP_MODE_CAPT_SWITCH
--
+- 
   type: var
   var_name: L:INI_MAP_MODE_RANGE_CAPT_SWITCH
--
+- 
   type: var
   var_name: L:INI_SPD_MACH_BUTTON
--
+- 
   type: var
   var_name: L:INI_AIRSPEED_DIAL_UP_COMMAND
--
+- 
   type: var
   var_name: L:INI_AIRSPEED_DIAL_DN_COMMAND
--
+- 
   type: var
   var_name: L:INI_FCU_MANAGED_SPEED_BUTTON
--
+- 
   type: var
   var_name: L:INI_FCU_SELECTED_SPEED_BUTTON
--
+- 
   type: var
   var_name: L:INI_AIRSPEED_DIAL
--
+- 
   type: var
   var_name: L:INI_NORTH_REF_STATE
--
+- 
   type: var
   var_name: L:INI_HEADING_DIAL_UP_COMMAND
--
+- 
   type: var
   var_name: L:INI_HEADING_DIAL_DN_COMMAND
--
+- 
   type: var
   var_name: L:INI_FCU_MANAGED_HEADING_BUTTON
--
+- 
   type: var
   var_name: L:INI_FCU_SELECTED_HEADING_BUTTON
--
+- 
   type: var
   var_name: L:INI_HEADING_DIAL
--
+- 
+  type: var
+  var_name: L:AP6_BUTTON
+- 
   type: var
   var_name: L:INI_FCU_HDG_VS_COMMAND
--
+- 
   type: var
   var_name: L:INI_FD_ON
--
+- 
   type: var
   var_name: L:INI_AP1_BUTTON
--
+- 
   type: var
   var_name: L:INI_AP2_BUTTON
--
+- 
+  type: var
+  var_name: L:AP8_BUTTON
+- 
   type: var
   var_name: L:INI_FCU_METRIC_STATE
--
+- 
   type: var
   var_name: L:INI_FCU_ALTITUDE_MODE_COMMAND
--
+- 
   type: var
   var_name: L:INI_ALTITUDE_DIAL_UP_COMMAND
--
+- 
   type: var
   var_name: L:INI_ALTITUDE_DIAL_DN_COMMAND
--
+- 
   type: var
   var_name: L:INI_FCU_ALTITUDE_PUSH_COMMAND
--
+- 
   type: var
   var_name: L:INI_FCU_ALTITUDE_PULL_COMMAND
--
+- 
   type: var
   var_name: L:INI_ALTITUDE_DIAL
--
+- 
   type: var
   var_name: L:INI_FCU_LEVEL_OFF_COMMAND
--
+- 
   type: var
   var_name: L:INI_VVI_DIAL_UP_COMMAND
--
+- 
   type: var
   var_name: L:INI_VVI_DIAL_DN_COMMAND
--
+- 
   type: var
   var_name: L:INI_FCU_PUSH_COMMAND
--
+- 
   type: var
   var_name: L:INI_FCU_PULL_COMMAND
--
+- 
   type: var
   var_name: L:INI_VVI_DIAL
+- 
+  type: var
+  var_name: L:AP7_BUTTON
+- 
+  type: var
+  var_name: L:INI_LOUDSPEAKER_2
+- 
+  type: var
+  var_name: L:INI_ATC_MSG
+- 
+  type: var
+  var_name: L:INI_FO_CHRONO_BUTTON
+- 
+  type: var
+  var_name: L:INI_MASTER_WARNING_COMMAND
+- 
+  type: var
+  var_name: L:INI_MASTER_CAUTION_COMMAND
+- 
+  type: var
+  var_name: L:INI_2_ALTIMETER_PUSH_COMMAND
+- 
+  type: var
+  var_name: L:INI_2_ALTIMETER_PULL_COMMAND
+- 
+  type: var
+  var_name: L:INI_LS_FO
+- 
+  type: var
+  var_name: L:INI_VV_RIGHT
+- 
+  type: var
+  var_name: L:INI_EFIS_FO_CSTR_BUTTON
+- 
+  type: var
+  var_name: L:INI_EFIS_FO_FIXES_BUTTON
+- 
+  type: var
+  var_name: L:INI_EFIS_FO_VOR_BUTTON
+- 
+  type: var
+  var_name: L:INI_EFIS_FO_NDB_BUTTON
+- 
+  type: var
+  var_name: L:INI_EFIS_FO_ARPT_BUTTON
+- 
+  type: var
+  var_name: L:INI_EFIS_BSK_1_FO
+- 
+  type: var
+  var_name: L:INI_EFIS_BSK_2_FO
+- 
+  type: var
+  var_name: L:INI_EFIS_BSK_3_FO
+- 
+  type: var
+  var_name: L:INI_EFIS_BSK_4_FO
+- 
+  type: var
+  var_name: L:INI_EFIS_BSK_5_FO
+- 
+  type: var
+  var_name: L:INI_MAP_MODE_FO_SWITCH
+- 
+  type: var
+  var_name: L:INI_MAP_MODE_RANGE_FO_SWITCH
+- 
+  type: var
+  var_name: L:INI_MCDUx_ESC
+- 
+  type: var
+  var_name: L:INI_MCDUx_CLR
+- 
+  type: var
+  var_name: L:INI_MCDUx_LEFT
+- 
+  type: var
+  var_name: L:INI_MCDUx_UP
+- 
+  type: var
+  var_name: L:INI_MCDUx_DOWN
+- 
+  type: var
+  var_name: L:INI_MCDUx_RIGHT
+- 
+  type: var
+  var_name: L:INI_MCDUx_DIR_TO
+
+- 
+  type: var
+  var_name: L:INI_MCDUx_FPLAN
+- 
+  type: var
+  var_name: L:INI_MCDUx_PERF
+- 
+  type: var
+  var_name: L:INI_MCDUx_DEST
+- 
+  type: var
+  var_name: L:INI_MCDUx_INIT
+- 
+  type: var
+  var_name: L:INI_MCDUx_SEC
+- 
+  type: var
+  var_name: L:INI_MCDUx_RADNAV
+- 
+  type: var
+  var_name: L:INI_MCDUx_SURV
+- 
+  type: var
+  var_name: L:INI_MCDUx_CL_MENU
+- 
+  type: var
+  var_name: L:INI_MCDUx_ATC
+- 
+  type: var
+  var_name: L:INI_MCDUx_A
+- 
+  type: var
+  var_name: L:INI_MCDUx_B
+- 
+  type: var
+  var_name: L:INI_MCDUx_C
+- 
+  type: var
+  var_name: L:INI_MCDUx_D
+- 
+  type: var
+  var_name: L:INI_MCDUx_E
+- 
+  type: var
+  var_name: L:INI_MCDUx_F
+- 
+  type: var
+  var_name: L:INI_MCDUx_G
+- 
+  type: var
+  var_name: L:INI_MCDUx_H
+ - 
+  type: var
+  var_name: L:INI_MCDUx_I
+- 
+  type: var
+  var_name: L:INI_MCDUx_J
+- 
+  type: var
+  var_name: L:INI_MCDUx_K
+- 
+  type: var
+  var_name: L:INI_MCDUx_L
+- 
+  type: var
+  var_name: L:INI_MCDUx_M
+- 
+  type: var
+  var_name: L:INI_MCDUx_N
+- 
+  type: var
+  var_name: L:INI_MCDUx_O
+- 
+  type: var
+  var_name: L:INI_MCDUx_P
+- 
+  type: var
+  var_name: L:INI_MCDUx_Q
+- 
+  type: var
+  var_name: L:INI_MCDUx_R
+- 
+  type: var
+  var_name: L:INI_MCDUx_S
+- 
+  type: var
+  var_name: L:INI_MCDUx_T
+- 
+  type: var
+  var_name: L:INI_MCDUx_U
+- 
+  type: var
+  var_name: L:INI_MCDUx_V
+- 
+  type: var
+  var_name: L:INI_MCDUx_W
+- 
+  type: var
+  var_name: L:INI_MCDUx_X
+- 
+  type: var
+  var_name: L:INI_MCDUx_Y
+- 
+  type: var
+  var_name: L:INI_MCDUx_Z
+- 
+  type: var
+  var_name: L:INI_MCDUx_BACKSPACE
+- 
+  type: var
+  var_name: L:INI_MCDUx_SLASH
+- 
+  type: var
+  var_name: L:INI_MCDUx_SPACE  
+- 
+  type: var
+  var_name: L:INI_MCDUx_NOTEPAD
+- 
+  type: var
+  var_name: L:INI_MCDUx_OIS
+-
+  type: var
+  var_name: L:INI_MCDUx_ND
+- 
+  type: var
+  var_name: L:INI_MCDUx_MFD
+- 
+  type: var
+  var_name: L:INI_MCDUx_MAILBOX
+- 
+  type: var
+  var_name: L:INI_MCDUx_SCROLL_UP
+- 
+  type: var
+  var_name: L:INI_MCDUx_SCROLL_DOWN
+- 
+  type: var
+  var_name: L:INI_MCDUx_0
+- 
+  type: var
+  var_name: L:INI_MCDUx_1
+- 
+  type: var
+  var_name: L:INI_MCDUx_2
+- 
+  type: var
+  var_name: L:INI_MCDUx_3
+- 
+  type: var
+  var_name: L:INI_MCDUx_4
+- 
+  type: var
+  var_name: L:INI_MCDUx_5
+- 
+  type: var
+  var_name: L:INI_MCDUx_6
+- 
+  type: var
+  var_name: L:INI_MCDUx_7
+- 
+  type: var
+  var_name: L:INI_MCDUx_8
+- 
+  type: var
+  var_name: L:INI_MCDUx_9
+- 
+  type: var
+  var_name: L:INI_MCDUx_DECIMAL
+- 
+  type: var
+  var_name: L:INI_MCDUx_PLUS
+- 
+  type: var
+  var_name: L:RMP_x_VHF_KEY
+- 
+  type: var
+  var_name: L:RMP_x_HF_KEY
+- 
+  type: var
+  var_name: L:RMP_x_TEL_KEY
+- 
+  type: var
+  var_name: L:RMP_x_MENU_KEY
+-
+  type: var
+  var_name: L:RMP_x_NAV_KEY
+- 
+  type: var
+  var_name: L:RMP_x_LSK_1_KEY
+- 
+  type: var
+  var_name: L:RMP_x_LSK_2_KEY
+- 
+  type: var
+  var_name: L:RMP_x_LSK_3_KEY
+- 
+  type: var
+  var_name: L:RMP_x_CLR_INFO_KEY
+- 
+  type: var
+  var_name: L:RMP_x_RSK_1_KEY
+- 
+  type: var
+  var_name: L:RMP_x_RSK_2_KEY
+- 
+  type: var
+  var_name: L:RMP_x_RSK_3_KEY
+- 
+  type: var
+  var_name: L:RMP_x_RST_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_0_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_1_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_2_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_3_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_4_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_5_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_6_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_7_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_8_KEY
+- 
+  type: var
+  var_name: L:RMP_x_NUM_9_KEY
+- 
+  type: var
+  var_name: L:INI_RMPy_TRANSMIT_CHANNEL
+- 
+  type: var
+  var_name: L:INI_RMPy_1_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_2_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_3_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_4_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_5_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_6_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_7_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_8_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_9_RECEIVE_SEL
+- 
+  type: var
+  var_name: L:INI_RMPy_1-9_VOLUME
+- 
+  type: var
+  var_name: L:INI_POTENTIOMETER_93
+- 
+  type: var
+  var_name: L:INI_POTENTIOMETER_94
+- 
+  type: var
+  var_name: L:INI_POTENTIOMETER_95
+- 
+  type: var
+  var_name: L:INI_RMP_RAD_NAV_MODE_y
+
+### ENG
+- 
+  type: var
+  var_name: L:INI_IGNITION_KNOB
+- 
+  type: var
+  var_name: L:INI_MIXTURE_RATIO1_HANDLE
+- 
+  type: var
+  var_name: L:INI_MIXTURE_RATIO2_HANDLE
+
+### ECL/ECAM 
+- 
+  type: var
+  var_name: L:INI_ECAM_CHECKLIST_LEFT
+- 
+  type: var
+  var_name: L:INI_ECAM_CHECKLIST_RIGHT
+- 
+  type: var
+  var_name: L:INI_EXAM_WHEEL_L_PLUS_COMMAND
+- 
+  type: var
+  var_name: L:INI_EXAM_WHEEL_L_MINUS_COMMAND
+- 
+  type: var
+  var_name: L:INI_EXAM_WHEEL_R_PLUS_COMMAND
+- 
+  type: var
+  var_name: L:INI_EXAM_WHEEL_R_MINUS_COMMAND
+- 
+  type: var
+  var_name: L:PUSH_ECAM_CLR
+- 
+  type: var
+  var_name: L:PUSH_ECAM_TOCONFIG
+- 
+  type: var
+  var_name: L:INI_ECAM_EMER_CANCEL_GUARD
+- 
+  type: var
+  var_name: L:PUSH_ECAM_EMER_CANCEL
+- 
+  type: var
+  var_name: L:PUSH_ECAM_RCL
+- 
+  type: var
+  var_name: L:INI_ECAM_DEFRD
+- 
+  type: var
+  var_name: L:INI_ECAM_ABN
+- 
+  type: var
+  var_name: L:INI_ECAM_RCL_ALL
+- 
+  type: var
+  var_name: L:INI_ECAM_DISPCH
+- 
+  type: var
+  var_name: L:PUSH_ECAM_STS
+- 
+  type: var
+  var_name: L:PUSH_ECAM_MORE
+- 
+  type: var
+  var_name: L:INI_ECAM_SD_KNOB_INC_COMMAND
+- 
+  type: var
+  var_name: L:INI_ECAM_SD_KNOB_DEC_COMMAND
+- 
+  type: var
+  var_name: L:INI_ECAM_SD_KNOB_PUSH
+# TBC PUSH_ECAM_x
+- 
+  type: var
+  var_name: L:PUSH_ECAM_VIDEO
+
+### Lower Pedestal 
+- 
+  type: var
+  var_name: L:INI_EMER_DESCENT_REQ
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_LEFT_UP_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_LEFT_DN_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_LEFT_PUSH
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_LEFT_PULL
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_RIGHT_UP_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_RIGHT_DN_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_RIGHT_PUSH
+- 
+  type: var
+  var_name: L:INI_WXR_ELEV_RIGHT_PULL
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_LEFT_UP_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_LEFT_DN_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_LEFT_PUSH
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_LEFT_PULL
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_RIGHT_UP_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_RIGHT_DN_COMMAND
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_RIGHT_PUSH
+- 
+  type: var
+  var_name: L:INI_WXR_GAIN_RIGHT_PULL
